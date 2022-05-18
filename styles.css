@@ -6,7 +6,7 @@
     
     body {
         font-family: 'open sans';
-        background-color: pink;
+        background-color: rgb(26, 241, 241);
     }
     
     .navegacion a:hover {
@@ -21,7 +21,7 @@
     }
     
     .titulo {
-        color: rgb(180, 11, 144);
+        color: rgb(226, 76, 166);
         font-size: 70px;
         text-align: center;
         margin-bottom: 50px;
