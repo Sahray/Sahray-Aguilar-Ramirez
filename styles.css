@@ -1,0 +1,227 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'open sans';
+        background-color: pink;
+    }
+    
+    .navegacion a:hover {
+        color: lightseagreen;
+    }
+    
+    .contenedor {
+        padding: 60px 0;
+        width: 90%;
+        max-width: 1600px;
+        margin: auto;
+    }
+    
+    .titulo {
+        color: rgb(180, 11, 144);
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .titulo h2 {
+        color: black;
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    /*header*/
+    
+    header {
+        width: 100%;
+        height: 600px;
+        background: #c251a2;
+        /* fallback for old browsers */
+        background: -webkit- linear-gradient(to right, hsla(340, 88%, 55%, 0.473), #bc4e9c), url(../BIOGRAFIA/img/portada.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, hsla(340, 88%, 55%, 0.473), #bc4e9c), url(../BIOGRAFIA/img/portada.jpg);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+    
+    nav {
+        text-align: right;
+        padding: 30px 50px 0 0;
+    }
+    
+    nav>a {
+        color: white;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+    
+    nav>a:hover {
+        text-decoration: underline;
+    }
+    
+    header .textos-header {
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .textos-header h1 {
+        font-size: 150px;
+        color: white;
+    }
+    
+    .wave {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    /*about us*/
+    
+    .contenedor-sobre-mí {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    
+    .imagen-about-us {
+        width: 700px;
+        height: 900px;
+    }
+    
+    .sobre-mí .contenido-textos {
+        width: 100%;
+    }
+    
+    .contenido-textos h3 {
+        margin-bottom: 15px;
+    }
+    
+    .contenido-textos p {
+        padding: 0px 0px 30px 15px;
+        font-weight: 300;
+        text-align: justify;
+        font-size: 30px;
+    }
+    /*Galeria*/
+    
+    .portafolio {
+        background: #f2f2f2;
+    }
+    
+    .galeria-port {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /*para que no se adjunten mi imagenes*/
+    }
+    
+    .imagen-port {
+        width: 24%;
+        /*poder ver mis imagenes*/
+        margin-bottom: 10px;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    }
+    
+    .imagen-port>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        /*para errores*/
+    }
+    
+    .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: scale(0);
+        background: hsla(273, 91%, 27%, 0.7);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .hover-galeria img {
+        width: 50%;
+    }
+    
+    .imagen-port:hover .hover-galeria {
+        transform: scale(1);
+    }
+    /*footer*/
+    
+    footer {
+        background-color: rgb(43, 35, 43);
+        padding: 60px 0 30px 0;
+        margin: auto;
+    }
+    
+    .contenedor-footer {
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    
+    .content-foo {
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .content-foo h4 {
+        color: white;
+        border-bottom: 3px solid violet;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .content-foo p {
+        color: white;
+    }
+    
+    .titulo-final {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .textos-pri {
+        font-size: 150px;
+        color: rgb(190, 3, 159);
+        text-align: center;
+    }
+    
+    .Ale-h {
+        font-size: 120px;
+        color: rgb(53, 43, 51);
+        text-align: center;
+    }
+    
+    @media screen and(max-width:900px) {
+        header {
+            background-position: center;
+        }
+        .contenedor-sobre-mí {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sobre-mí .contenido-textos {
+            width: 90%;
+        }
+    }
